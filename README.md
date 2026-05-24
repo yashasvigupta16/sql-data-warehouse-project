@@ -5,7 +5,7 @@ This project demonstrate a comprehensive data warehousing and analytics solution
 
 ---
 
-##:rocket: Project Requirements
+## 🚀 Project Requirements
 
 ### Building the Data Warehouse (Data Engineering)
 
