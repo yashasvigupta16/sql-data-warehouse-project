@@ -50,6 +50,7 @@ These insights empower stakeholders with key business metrics, enabling strategi
 ---
 ## 🏗️Data Architecture
 The data arachitecture for this project follows Medallion Architecture **Bronze**, **Silver**, and **Gold** layer:
+![Data Architecture](docs/High Level Architecture.drawio.png)
 
 ## :shield: License
 
