@@ -50,7 +50,36 @@ These insights empower stakeholders with key business metrics, enabling strategi
 ---
 ## 🏗️Data Architecture
 The data arachitecture for this project follows Medallion Architecture **Bronze**, **Silver**, and **Gold** layer:
-![Data Architecture](docs/High Level Architecture.drawio.png)
+![Data Architecture](docs/data_architecture.png)
+    1.**Bronze Lyer:** Stores raw data as it is from the source systems. Data is ingested from CSV Files into SQL Server Database.
+    2.**Silver Layer:** This layer includes data cleansing,standardisation, and normalisation processes to prepare data for analysis.
+    3. **Gold Layer:** Houses business_ready data modeled into a star schema required for reporting and analytics.
+
+---
+## Repository Structure 
+    data-warehouse-project/
+    │
+    ├── datasets/                                 # Raw datesets used for the project (ERP and CRM data)
+    │ 
+    ├── docs/                                     # Project documentation and architecture details
+    │     ├── etl.drawio                          # Drwa.io file shows all different techniques and methods of ETL
+    │     ├── data_architecture.png               # Draw.io file shows the project's architecture
+    │     ├── data_catalog.md                     # Catalog of datasets, including field description and metadata
+    │     ├── data_flow.drawio                    # Draw.io file for the data flow diagram
+    │     ├── data_models.drawio                  # Draw.io file for data models (star schema)
+    │     ├── naming-conventions.md               # Consistent naming guidelines for tables, columns, and files
+    │
+    ├── scripts/                                  # SQL scripts for ETL and transformations
+    │     ├── bronze/                             # Scripts for extracting and loading raw data
+    │     ├── silver/                             # Scripts for cleaning and transforming data
+    │     ├── gold/                               # Scripts for creating analytical models
+    │
+    ├── tests/                                    # Test scripts and quality files
+    │
+    ├── README.md                                 # Project overview and instructions
+    ├── LICENSE                                   # License information for the repository
+    ├── .gitignore                                # Files abd directories to be ignored by Git
+    └── requirements.txt                          # Dpendencies and requirements for the project
 
 ## :shield: License
 
